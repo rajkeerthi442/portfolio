@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.header 
+{
+    display: flex;
+    align-items: center;
+    color:white;
+    background-color: black;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+}
+.header_left{
+    flex: 0.4;
+}
+.header_left>h1{
+    text-align: center;
+    font-family: "Alata",sans-serif;
+    letter-spacing: 2px;
+    padding:20px 0;
+    
+}
+.header_left>h1>span{
+    color:#FF4500;
+}
+.header_right{
+    display:flex;
+    flex:0.6;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+.header_right>a>h4{
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    font-family: "Crimson Text" ,serif;
+    
+    letter-spacing: 1px;
+}
+.header_right>a>h4:hover{
+    transform: scale(1.09);
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    font-family: "Crimson Text",serif;
+    font-size: 18px;
+    cursor: pointer;
+    transform: transform 200ms ease-in-out;
+   
+}
+/* .header_rightbutton{
+     background-color: #FF4500;
+     color: white;
+     padding: 5px 20px !important;
+     border-radius:5px ;
+     cursor: pointer;
+} */
+
+body.active-show{
+    overflow-y: hidden;
+}
+/* .btn-show{
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+} */
+.show .overlay{
+    width:100vh;
+        height:100vh;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+}
+.overlay{
+    background: none;
+}
+.show-showcontent{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1.4;
+    background: rgb(202,176,219);
+    background: radial-gradient(circle, rgba(202,176,219,1) 0%, rgba(233,101,13,1) 50%, rgba(255,172,55,1) 100%);
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+.close-show{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+.show .close{
+    position: absolute;
+    top: 5px;
+    right: 8px}
+.show .close:hover{
+        color: red !important;
+}
